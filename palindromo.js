@@ -3,5 +3,6 @@ function verificaPalindromo(palavra) {
 }
 
 // Chamada da função
-console.log(verificaPalindromo("radar"));  // Exemplo com "radar" (palíndromo)
-console.log(verificaPalindromo("javascript"));  // Exemplo com "javascript" (não palíndromo)
+console.log(verificaPalindromo("radar"));  
+console.log(verificaPalindromo("javascript"));  
+console.log(verificaPalindromo("colloc"));  
