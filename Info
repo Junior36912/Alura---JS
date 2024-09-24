@@ -1,0 +1,123 @@
+JavaScript é uma linguagem de programação essencial para o desenvolvimento web. Aqui estão alguns dos conceitos básicos:
+
+### 1. **Sintaxe Básica**
+- **Variáveis:** Usadas para armazenar dados. Em JavaScript, podem ser declaradas usando `var`, `let` ou `const`.
+  ```javascript
+  var nome = 'José';
+  let idade = 30;
+  const PI = 3.14;
+  ```
+
+### 2. **Tipos de Dados**
+- **Primitivos:** Número (`number`), String (`string`), Boolean (`boolean`), Undefined (`undefined`), Null (`null`), Symbol (`symbol`), e BigInt (`bigint`).
+- **Objetos:** Coleções de pares chave-valor.
+  ```javascript
+  let pessoa = {
+    nome: 'José',
+    idade: 30
+  };
+  ```
+
+### 3. **Operadores**
+- **Aritméticos:** `+`, `-`, `*`, `/`, `%`, `++`, `--`
+- **Atribuição:** `=`, `+=`, `-=`, `*=`, `/=`, `%=`
+- **Comparação:** `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
+- **Lógicos:** `&&`, `||`, `!`
+
+### 4. **Estruturas de Controle**
+- **Condicionais:** `if`, `else`, `else if`, `switch`
+  ```javascript
+  if (idade >= 18) {
+    console.log('Maior de idade');
+  } else {
+    console.log('Menor de idade');
+  }
+  ```
+- **Laços:** `for`, `while`, `do while`
+  ```javascript
+  for (let i = 0; i < 5; i++) {
+    console.log(i);
+  }
+  ```
+
+### 5. **Funções**
+- **Declaração de Função:**
+  ```javascript
+  function saudacao(nome) {
+    return 'Olá, ' + nome;
+  }
+  ```
+- **Funções Anônimas e Arrow Functions:**
+  ```javascript
+  const saudacao = (nome) => 'Olá, ' + nome;
+  ```
+
+### 6. **Manipulação do DOM**
+- **Selecionar Elementos:** `document.getElementById`, `document.querySelector`
+  ```javascript
+  let elemento = document.getElementById('meuElemento');
+  ```
+- **Modificar Conteúdo:** `innerHTML`, `textContent`
+  ```javascript
+  elemento.innerHTML = 'Novo Conteúdo';
+  ```
+
+### 7. **Eventos**
+- **Adicionar e Remover Eventos:** `addEventListener`, `removeEventListener`
+  ```javascript
+  elemento.addEventListener('click', () => {
+    alert('Elemento clicado!');
+  });
+  ```
+
+### 8. **Assíncrono**
+- **Callbacks:**
+  ```javascript
+  function buscarDados(callback) {
+    setTimeout(() => {
+      callback('Dados recebidos');
+    }, 2000);
+  }
+  ```
+- **Promises:**
+  ```javascript
+  let promessa = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Sucesso');
+    }, 2000);
+  });
+  ```
+- **Async/Await:**
+  ```javascript
+  async function buscarDados() {
+    let dados = await promessa;
+    console.log(dados);
+  }
+  ```
+
+### 9. **JSON (JavaScript Object Notation)**
+- **Stringify e Parse:**
+  ```javascript
+  let obj = { nome: 'José', idade: 30 };
+  let jsonString = JSON.stringify(obj);
+  let novoObj = JSON.parse(jsonString);
+  ```
+
+### 10. **Módulos**
+- **Import e Export:**
+  ```javascript
+  // arquivo.js
+  export const nome = 'José';
+  export function saudacao() {
+    return 'Olá';
+  }
+
+  // main.js
+  import { nome, saudacao } from './arquivo.js';
+  ```
+
+### 11. **Bibliotecas e Frameworks Populares**
+- **Bibliotecas:** jQuery, Lodash
+- **Frameworks:** React, Angular, Vue.js
+
+Esses conceitos formam a base do JavaScript, permitindo a criação de aplicações web dinâmicas e interativas.
