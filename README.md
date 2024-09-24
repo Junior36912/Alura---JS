@@ -1,4 +1,4 @@
-# Projeto JavaScript Básico - ALURA - JS
+# Projeto JavaScript Básico- JS
 
 Este projeto no GitHub aborda conceitos fundamentais de JavaScript, desde declarações de variáveis, passando por funções até tratamento de erros. Os scripts são exemplos práticos e didáticos para quem está começando a programar em JavaScript e quer compreender as características essenciais da linguagem.
 
